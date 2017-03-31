@@ -1,21 +1,35 @@
 .jumbotron {
   text-align: center;
   background-color: #f4deb5;
-};
+}
 
-#side {
+html, body, .row, .container {
+    height: 100%;
+}
+body {
+  background-color: #E6E6E6;
+}
+
+h3 {
+  color: #f4deb5;;
+}
+
+h4 {
+  color: white;
+}
+.row {
+  margin-left: 0px;
+}
+
+.col-sm-3 {
   background-color: #90BB90;
-};
+  color: black;
+  height: 100%;
+  /*margin-left: 0px;
+  padding-left: 0px;*/
+  /*position: fixed;*/
+}
 
 #gitName {
   color: #658DAD;
-};
-
-.row {
-  background-color: #90BB90;
-  color: #90BB90;
-};
-
-h2 {
-  color: white;
-};
+}

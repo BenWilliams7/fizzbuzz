@@ -30,11 +30,18 @@
         </div>
         <div class="col-sm-9">
           <form id="form">
-            <h3>Type here:</h3>
-            <input type="text" id="num1"><br>
-            <button type="submit" class="btn btn-info">Submit</button>
+            <h2>Let's play!</h2>
+            <h2>Rules:</h2>
+            <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+            <ol>
+              <li>Numbers divisible by 3 become "ping"</li>
+              <li>Numbers divisible by 5 become "pong"</li>
+              <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+            </ol>
+            <p><strong>Enter your number here: </strong><input type="text" id="num1"> <button type="submit" class="btn btn-basic">Ping Pong!</button></p>
+
           </form>
-          <p> Live narration of the Table Tennis World Championship: <span id="romResult"></span></p>
+          <!-- <p><span id="romResult"></span></p> -->
           <div class="result">
             <ul class="alerts">
               <p></p>
