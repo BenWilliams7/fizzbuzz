@@ -2,3 +2,20 @@
   text-align: center;
   background-color: #f4deb5;
 };
+
+#side {
+  background-color: #90BB90;
+};
+
+#gitName {
+  color: #658DAD;
+};
+
+.row {
+  background-color: #90BB90;
+  color: #90BB90;
+};
+
+h2 {
+  color: white;
+};
