@@ -23,20 +23,19 @@ function countUp(bound) {
 
 // User Logic
 $(document).ready(function() {
-  $('form').submit(function() {
+  $('form').submit(function(event) {
+    event.preventDefault();
     //take bound
     var bound = parseInt($('#num1').val());
     //make sure it's positive
     if (bound > 0) {
-    //call function
-    var resultArray = countUp(bound);
-    // var resultArray = pongPlace(bound);
-    //display output
-    $('ul').empty();
-    $.each(resultArray, function (idx, result) {
-      $('<li>').text(result).appendTo('ul');
-    })
+      //call function
+      var resultArray = countUp(bound);
+      //display output
+      $('ul').empty();
+      $.each(resultArray, function (idx, result) {
+        $('<li>').text(result).appendTo('ul');
+      })
     };
-    return false;
   });
 });
