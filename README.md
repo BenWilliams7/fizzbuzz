@@ -15,27 +15,31 @@ Inputting a number will create a count up to that number with pings and pongs oc
 
 ## Specifications
   1. Make an array that can count up to the provided number (with a "for" loop).
+
     example input: 2
     example output: [1, 2]
 
   2. Make an "if" statement in the "for" loop that replaces every third word with ping. Have the count up to the provided number be captured by "else."
+
     example input: 4
     example output: [1, 2, ping, 4]
 
   3. Make an "if" statement in the "for" loop that replaces every 15th word with pingpong and shift the previous "if" statement into an "else if" statement.
+
     example input: 20
     example output: [1, 2, ping, 4, 5, ping ... 14, pingpong, 16 , 17, ping, 19, 20]
 
   3. Make an "else if" statement in the "for" loop that replaces every 5th word with pingpong.
+
     example input: 20
     example output: [1, 2, ping, 4, pong, ping ... 14, pingpong, 16 , 17, ping, 19, pong]
 
   4. Display the output in an array that will empty and reset after each input.
-    first
-      first input: 4
-      first output: [1, 2, ping, 4]
-      second input: 2
-      second output: [1, 2]
+
+    first input: 4
+    first output: [1, 2, ping, 4]
+    second input: 2
+    second output: [1, 2]
 
 ## Known Bugs
 

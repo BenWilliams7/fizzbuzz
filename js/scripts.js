@@ -36,6 +36,7 @@ $(document).ready(function() {
       $.each(resultArray, function (idx, result) {
         $('<li>').text(result).appendTo('ul');
       })
-    };
+    } else {alert("Please enter a positive number");
+  };
   });
 });
