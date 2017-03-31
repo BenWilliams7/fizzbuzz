@@ -1,47 +1,41 @@
-
-
+// Business Logic
 function countUp(bound) {
+  //Create empty array
   var result = [];
-  var thirdResult = [];
+  //Use for loop to count up to bound.
   for (var i = 1; i <= bound; i += 1) {
-  if ((i % 3) === 0) {
-    result.push("ping");
-  } else {
-    result.push(i);
-  }}
+  //Use if/then to replace every 15th number.
+    if ((i % 15) === 0) {
+      result.push("pingpong");
+  //Use if/then to replace every 3rd number.
+    } else if ((i % 3) === 0) {
+      result.push("ping");
+  //Use if/then to replace every 5th number.
+    } else if ((i % 5) === 0) {
+      result.push("pong");
+  //Use else to display all remaining with numbers.
+    } else {
+      result.push(i);
+    }
+  }
   return result;
 }
-//
-// function pingPlace(bound, threes) {
-//   var result = [];
-//   for (var i = 3; i <= bound; i += 3) {
-//     result.push("ping");
-//   }
-//   return result;
-// }
-// function pongPlace(bound, fives) {
-//   var result = [];
-//   for (var i = 5; i <= bound; i += 5) {
-//     result.push("pong");
-//   }
-//   return result;
-// }
 
+// User Logic
 $(document).ready(function() {
   $('form').submit(function() {
-    //grab bound
+    //take bound
     var bound = parseInt($('#num1').val());
-    // var multiple = parseInt($('#num2').val());
     //make sure it's positive
     if (bound > 0) {
-        //call function
-        var resultArray = countUp(bound);
-        // var resultArray = pongPlace(bound);
-        //display output
-        $('ul').empty();
-        $.each(resultArray, function (idx, result) {
-          $('<li>').text(result).appendTo('ul');
-        })
+    //call function
+    var resultArray = countUp(bound);
+    // var resultArray = pongPlace(bound);
+    //display output
+    $('ul').empty();
+    $.each(resultArray, function (idx, result) {
+      $('<li>').text(result).appendTo('ul');
+    })
     };
     return false;
   });
