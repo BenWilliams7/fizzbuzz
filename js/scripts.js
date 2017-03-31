@@ -5,12 +5,10 @@ function countUp(bound) {
   var thirdResult = [];
   for (var i = 1; i <= bound; i += 1) {
   if ((i % 3) === 0) {
-    result.push(ping);
+    result.push("ping");
   } else {
     result.push(i);
-  }
-  }
-  alert("end");
+  }}
   return result;
 }
 //
