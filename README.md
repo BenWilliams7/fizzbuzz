@@ -4,7 +4,7 @@ Break the program down into simple, individual behaviors with input/output examp
 
 
 specs
-1. It can count up to the provided number.
+1. Make an array that can count up to the provided number.
   example input: 2
   example output: [1, 2]
 
